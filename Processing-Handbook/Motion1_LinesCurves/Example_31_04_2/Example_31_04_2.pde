@@ -15,8 +15,8 @@ void draw() {
   ellipse(100, 50, d, d);
   ellipse(50, 0, d, d);
   ellipse(50, 100, d, d);
-  d = d + (speed * direction);
-  if ((d > width) || (d < width/10)) {
+  d = d + direction;
+  if ((d > height) || (d < 20)) {
     direction = -direction;
   }
 }
