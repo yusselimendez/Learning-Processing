@@ -6,7 +6,7 @@ float distX; // X-axis distance to move
 float distY; // Y-axis distance to move
 float x = 0.0; // Current x-coordinate
 float y = 0.0; // Current y-coordinate
-float step = 0.02; // Size of each step (0.0 to 1.0)
+float step = 0.01; // Size of each step (0.0 to 1.0)
 float pct = 0.0; // Percentage traveled (0.0 to 1.0)
 
 void setup() {
