@@ -12,7 +12,7 @@ class Drop {
    yspeed = yspeed + grav;
    
    if(y > height) {
-      y = random(-200, -100);     
+      y = random(-200, -100);
       yspeed = map(z, 0, 20, 1, 10);
    }
  }

@@ -33,7 +33,6 @@ void draw(){
   for(int i = 0; i < xpos.length; i++){
     noStroke();
     fill(i * 4);
-    //image(tangibleObjImg, xpos[i], ypos[i], i, i);
     ellipse(xpos[i], ypos[i], i, i); 
   }
   
