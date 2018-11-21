@@ -2,23 +2,27 @@
 import processing.video.*;
 Movie myMovie;
 Timer timer;
+int time = 3000;
 
 void setup() {
-  size(640, 360);
+  size(displayWidth,displayHeight);
   background(0);
   myMovie = new Movie(this, "video.mov");
   
-  timer = new Timer(5000);
+  timer = new Timer(time);
   timer.start();
 }
 
 void draw() {
   if (timer.isFinished()) {
-    myMovie.play();
-  }  
+    displayVideo();
+  }
+}
+
+void displayVideo() {  
+  myMovie.play();  
   if (myMovie.available()) {
-      myMovie.read();
-  }  
-  image(myMovie, 0, 0, width, height);
-    //timer.start();
+     myMovie.read();
+     image(myMovie, 0, 0, width, height);
+  }
 }
